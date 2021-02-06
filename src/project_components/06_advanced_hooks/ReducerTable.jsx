@@ -8,7 +8,7 @@ import {
   Paper,
 } from "@material-ui/core";
 
-function ReducerTable() {
+function ReducerTable(props) {
   return (
     <TableContainer
       variant="outlined"
@@ -26,6 +26,13 @@ function ReducerTable() {
             <TableCell>Lifetime cost</TableCell>
           </TableRow>
         </TableHead>
+        <TableBody>
+          <TableRow>
+            {props.data.map((datum, index) => (
+              <TableCell key={index}>{datum}</TableCell>
+            ))}
+          </TableRow>
+        </TableBody>
       </Table>
     </TableContainer>
   );

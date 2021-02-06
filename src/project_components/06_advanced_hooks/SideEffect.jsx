@@ -28,21 +28,6 @@ function SideEffect() {
       setOutput(multipliers.map((x) => x * input).join(", "));
     }
   };
-
-  /* Side-effect management */
-  /*   useEffect(() => {
-    console.log("mounting");
-    return () => {
-      if (typeof output === "string") {
-        let arr = output.split(", ").map(Number);
-        alert(
-          `The sum of the numbers you entered is: ${arr.reduce(
-            (a, b) => a + b
-          )}`
-        );
-      }
-    };
-  }, [output]); */
   return (
     <Paper variant="outlined" style={{ padding: "1rem", marginBottom: "1rem" }}>
       <Typography variant="h5" gutterBottom>

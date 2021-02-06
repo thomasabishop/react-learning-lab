@@ -7,7 +7,9 @@ function MainLayout(props) {
     <React.Fragment>
       <Header />
       <Box m={4}>
-        <Container maxWidth="lg">{props.children}</Container>
+        <Container style={{ marginTop: "2rem" }} maxWidth="lg">
+          {props.children}
+        </Container>
       </Box>
     </React.Fragment>
   );

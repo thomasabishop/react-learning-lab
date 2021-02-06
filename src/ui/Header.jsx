@@ -3,17 +3,25 @@ import {
   AppBar,
   Toolbar,
   Typography,
+  Button,
   IconButton,
 } from "@material-ui/core";
+import Logo from "../../src/react-lab-logo.svg";
 import { Link } from "react-router-dom";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import HomeIcon from "@material-ui/icons/Home";
 
 const useStyles = makeStyles(() => ({
-  flexEven: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
+  root: {
+    flexGrow: 1,
+  },
+
+  title: {
+    flexGrow: 1,
+  },
+
+  logo: {
+    width: "70px",
   },
 }));
 
@@ -21,25 +29,33 @@ const Header = () => {
   const classes = useStyles();
 
   return (
-    <AppBar position="sticky">
-      <Toolbar className={classes.flexEven}>
-        <IconButton
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          component={Link}
-          to="/"
-        >
-          <HomeIcon />
-        </IconButton>
-        <Typography variant="h6">Thomas's React Learning Lab</Typography>
-        <div>
-          <IconButton edge="start" color="inherit" aria-label="menu">
-            <GitHubIcon />
+    <div className={classes.root}>
+      <AppBar position="sticky">
+        <Toolbar>
+          <IconButton
+            component={Link}
+            to="/"
+            edge="start"
+            className={classes.menuButton}
+            color="inherit"
+            aria-label="menu"
+          >
+            <img className={classes.logo} src={Logo} alt="" />
           </IconButton>
-        </div>
-      </Toolbar>
-    </AppBar>
+          <Typography variant="h5" className={classes.title}>
+            Thomas's React Learning Lab
+          </Typography>
+          <IconButton
+            href="http://www.google.com/"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+          >
+            <GitHubIcon fontSize="large" />
+          </IconButton>
+        </Toolbar>
+      </AppBar>
+    </div>
   );
 };
 

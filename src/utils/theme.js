@@ -3,8 +3,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 export const theme = createMuiTheme({
   typography: {
     fontSize: 12,
-    fontFamily:
-      "-apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif ",
+    fontFamily: "Fira Sans",
     h1: {
       fontWeight: 800,
       fontSize: "2.25rem",
@@ -50,14 +49,13 @@ export const theme = createMuiTheme({
     button: {
       fontWeight: 500,
 
-      fontFamily:
-        "-apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif ",
+      fontFamily: "Fira Sans",
       //fontSize: "1rem",
     },
   },
   palette: {
     primary: {
-      main: "#062263",
+      main: "#282C34",
     },
     secondary: {
       main: "#eb445a",
