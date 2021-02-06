@@ -8,8 +8,6 @@ import GithubUserDir from "./pages/04_GithubUserDir";
 import ConditionalRendering from "./pages/05_ConditionalRendering";
 import AdvancedHooks from "./pages/06_AdvancedHooks";
 import ContextOne from "./pages/07_ContextOne";
-import ContextTwo from "./pages/08_Context_Two";
-
 import ChildPage from "./project_components/07_context_one/ChildPage";
 class App extends React.Component {
   render() {
@@ -23,7 +21,6 @@ class App extends React.Component {
         <Route path="/conditional-rendering" component={ConditionalRendering} />
         <Route path="/advanced-hooks" component={AdvancedHooks} />
         <Route path="/context-one" component={ContextOne} />
-        <Route path="/context-two" component={ContextTwo} />
 
         <Route path="/child-page" component={ChildPage} />
       </Switch>

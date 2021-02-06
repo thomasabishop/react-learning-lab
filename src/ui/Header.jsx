@@ -3,13 +3,11 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  Button,
   IconButton,
 } from "@material-ui/core";
 import Logo from "../../src/react-lab-logo.svg";
 import { Link } from "react-router-dom";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import HomeIcon from "@material-ui/icons/Home";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -46,7 +44,7 @@ const Header = () => {
             Thomas's React Learning Lab
           </Typography>
           <IconButton
-            href="http://www.google.com/"
+            href="https://github.com/thomasabishop/react-learning-lab"
             edge="start"
             color="inherit"
             aria-label="menu"

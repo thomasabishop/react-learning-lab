@@ -69,16 +69,6 @@ const taskIndex = [
       "https://cdn.pixabay.com/photo/2018/11/17/22/15/tree-3822149_1280.jpg",
     link: "/context-one",
   },
-  {
-    unique_id: 8,
-    taskType: "Experiment",
-    title: "Context II",
-    description: "Transferring data between components accross page components",
-    technologies: ["hooks", "context", "react-router"],
-    image:
-      "https://cdn.pixabay.com/photo/2015/07/17/22/42/whiteboard-849803_960_720.jpg",
-    link: "/context-two",
-  },
 ];
 
 export default taskIndex;
