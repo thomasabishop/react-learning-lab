@@ -1,16 +1,12 @@
-import { Grid } from "@material-ui/core";
-import MainLayout from "../layouts/MainLayout";
-import LaunchCard from "../ui/LaunchCard";
-import taskIndex from "../data/taskIndex";
-
+import MainLayout from '../layouts/MainLayout';
+import taskIndex from '../data/taskIndex';
+import Listing from '../ui/Listing';
 function Launch() {
   return (
     <MainLayout>
-      <Grid container spacing={3}>
-        {taskIndex.map((data, index) => (
-          <LaunchCard key={index} {...data} />
-        ))}
-      </Grid>
+      {taskIndex.map((data, index) => (
+        <Listing key={index} {...data} />
+      ))}
     </MainLayout>
   );
 }
