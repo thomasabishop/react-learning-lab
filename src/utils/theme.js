@@ -1,68 +1,66 @@
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createMuiTheme } from '@material-ui/core/styles';
 
 export const theme = createMuiTheme({
   typography: {
     fontSize: 12,
-    fontFamily: "Fira Sans",
+    fontFamily:
+      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
     h1: {
       fontWeight: 800,
-      fontSize: "2.25rem",
-      "@media (max-width:600px)": {
-        fontSize: "1.75rem",
+      fontSize: '2.25rem',
+      '@media (max-width:600px)': {
+        fontSize: '1.75rem',
       },
     },
     h2: {
       fontWeight: 700,
-      fontSize: "2.15rem",
-      "@media (max-width:600px)": {
-        fontSize: "1.5rem",
+      fontSize: '2.15rem',
+      '@media (max-width:600px)': {
+        fontSize: '1.5rem',
       },
     },
     h3: {
       fontWeight: 700,
-      fontSize: "1.75rem",
-      "@media (max-width:600px)": {
-        fontSize: "1.25rem",
+      fontSize: '1.75rem',
+      '@media (max-width:600px)': {
+        fontSize: '1.25rem',
       },
     },
     h4: {
       fontWeight: 600,
-      fontSize: "1.6rem",
-      "@media (max-width:600px)": {
-        fontSize: "1.2rem",
+      fontSize: '1.6rem',
+      '@media (max-width:600px)': {
+        fontSize: '1.2rem',
       },
     },
     h5: {
       fontWeight: 600,
-      fontSize: "1.3rem",
-      "@media (max-width:600px)": {
-        fontSize: "1.15rem",
+      fontSize: '1.3rem',
+      '@media (max-width:600px)': {
+        fontSize: '1.15rem',
       },
     },
     h6: {
       fontWeight: 500,
-      fontSize: "1.2rem",
-      "@media (max-width:600px)": {
-        fontSize: "1.1rem",
+      fontSize: '1.2rem',
+      '@media (max-width:600px)': {
+        fontSize: '1.1rem',
       },
     },
     button: {
       fontWeight: 500,
-
-      fontFamily: "Fira Sans",
-      //fontSize: "1rem",
     },
   },
   palette: {
     primary: {
-      main: "#282C34",
+      main: '#282C34',
     },
     secondary: {
-      main: "#eb445a",
+      main: '#eb445a',
     },
     text: {
-      primary: "#424242",
-      secondary: "#737373",
+      primary: '#424242',
+      secondary: '#737373',
     },
   },
 });
