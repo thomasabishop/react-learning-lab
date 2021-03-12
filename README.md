@@ -1,9 +1,15 @@
-# Thomas's React Learning Lab
-
-![](src/learn-lab.png)
+<h1 align="center">
+Thomas's React Learning Lab
+</h1>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aebfd58b-0e19-46f9-aa3a-a1c2c0888c2e/deploy-status)](https://app.netlify.com/sites/thomas-react-learning-lab/deploys)
 
-[Live site](https://thomas-react-learning-lab.netlify.app/)
+<p align="center">
+<a href="https://thomas-react-learning-lab.netlify.app/">
+   <img src="https://github.com/thomasabishop/react-learning-lab/blob/master/src/readme-img.png?raw=true"> 
+</a>
+</p>
 
-### An environment for developing my understanding of React.js and experimenting with new features.
+<div align="center">
+<a href="https://thomas-react-learning-lab.netlify.app/" >https://thomas-react-learning-lab.netlify.app/</a>
+</div>
