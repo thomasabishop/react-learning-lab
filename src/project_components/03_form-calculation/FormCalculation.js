@@ -15,15 +15,15 @@ class FormCalculation extends React.Component {
   returnSum = (x, y) => x + y;
 
   resetForm = () => {
+
+    
     this.setState(this.virginState);
   };
 
   handleSubmit = (event) => {
     event.preventDefault();
     if (this.state.inputOne && this.state.inputTwo !== "") {
-      this.setState({
-        outputSum: this.returnSum(
-          Number(this.state.inputOne),
+      this.setState({ outputSum: this.returnSum( Number(this.state.inputOne),
           Number(this.state.inputTwo)
         ),
       });

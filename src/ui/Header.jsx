@@ -44,7 +44,7 @@ const Header = () => {
             Thomas's React Learning Lab
           </Typography>
           <IconButton
-            href="https://github.com/thomasabishop/react-learning-lab"
+            href="https://github.com/thomasabishop"
             edge="start"
             color="inherit"
             aria-label="menu"

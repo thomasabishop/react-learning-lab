@@ -10,11 +10,15 @@ function FormHookTwo() {
   const initialState = {
     email: sessionStorage.getItem("email") || "",
     phone: sessionStorage.getItem("phone") || "",
+    
+
     age: sessionStorage.getItem("age") || "",
   };
 
   const [formValues, setFormValues] = useState(initialState);
-  const handleChange = (event) => {
+  const handleChange = (event) => 
+
+  {
     const { name, value } = event.target;
     setFormValues({ ...formValues, [name]: value });
   };
