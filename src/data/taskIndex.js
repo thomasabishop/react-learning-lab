@@ -78,6 +78,17 @@ const taskIndex = [
       'https://cdn.pixabay.com/photo/2018/11/17/22/15/tree-3822149_1280.jpg',
     link: '/context-one',
   },
+  {
+    unique_id: 8,
+    date: '13-03-21',
+    taskType: 'Mini-project',
+    title: 'GitHub Pictograph',
+    description: 'Recreating the GitHub commit frequency pictograph.',
+    technologies: ['null'],
+    image:
+      'https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2255&q=80',
+    link: '/gh-pictograph',
+  },
 ];
 
 export default taskIndex;

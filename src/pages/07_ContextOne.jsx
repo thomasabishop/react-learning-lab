@@ -1,6 +1,6 @@
-import ExperimentBody from "../ui/ExperimentBody";
-import { Grid } from "@material-ui/core";
-import ContextPreHook from "../project_components/07_context_one/ContextPreHook";
+import ExperimentBody from '../ui/ExperimentBody';
+import { Grid } from '@material-ui/core';
+import ContextPreHook from '../project_components/07_context_one/ContextPreHook';
 function PassingState() {
   return (
     <ExperimentBody title="Context I: Intra-page">
