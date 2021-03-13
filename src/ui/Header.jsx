@@ -50,7 +50,6 @@ const Header = (props) => {
             <IconButton
               component={Link}
               to="/"
-              edge="start"
               className={classes.menuButton}
               color="inherit"
               aria-label="menu"
@@ -62,7 +61,6 @@ const Header = (props) => {
             </Typography>
             <IconButton
               href="https://github.com/thomasabishop"
-              edge="start"
               color="inherit"
               aria-label="menu"
             >
