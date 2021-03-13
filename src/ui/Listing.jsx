@@ -5,8 +5,9 @@ const useStyles = makeStyles(() => ({
     display: 'grid',
     gridTemplateColumns: 'minmax(60px, 80px) 2fr 1fr 80px',
     gridTemplateRows: 'minMax(50px, 70px)',
-    padding: '.5rem',
+    padding: '1rem',
     marginBottom: '1rem',
+    borderRadius: '6px',
     cursor: 'pointer',
     '&:hover': {
       backgroundColor: '#f3f3f3',
@@ -97,19 +98,18 @@ function Listing(props) {
               size="small"
               color="secondary"
               label={props.taskType}
-              className={classes.chip}
+              className={classes.chipBlue}
             />
           ) : (
             <Chip
               size="small"
               color="secondary"
               label={props.taskType}
-              className={classes.chipBlue}
+              className={classes.chip}
             />
           )}
         </div>
         <Typography className={classes.date}>{props.date}</Typography>
-        <Typography></Typography>
       </div>
     </Link>
   );
