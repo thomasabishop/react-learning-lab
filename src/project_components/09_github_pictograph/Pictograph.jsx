@@ -1,17 +1,20 @@
 import './Pictograph.scss';
-import { generateYear } from './generateData.js';
+import { generateYear, generateCommitData } from './generateData.js';
+import { Button, ButtonGroup } from '@material-ui/core';
 
-function Pictograph() {
-  const data = generateYear();
-  console.log(data);
+function Pictograph(props) {
+  //const data = generateYear();
+  //const data = generateCommitData('empty');
   return (
-    <div className="Pictorgraph">
+    <div className="Pictograph">
       <div className="year">
-        {data.map((items, index) => {
+        {props.data.map((items, index) => {
           return (
             <div key={index} className="week">
               {items.map((subItems, index) => {
-                return (
+                return subItems === 0 ? (
+                  <div className={`day-color-start`} key={index}></div>
+                ) : (
                   <div className={`day-color-${subItems}`} key={index}></div>
                 );
               })}

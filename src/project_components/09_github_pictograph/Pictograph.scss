@@ -5,17 +5,23 @@
   }
 }
 
+.day-color-start {
+  background-color: #e8e8e8;
+}
+
 // Root component
 .Pictograph {
   display: flex;
-  // padding: 1rem;
+  //  padding: 1rem;
 }
 
 .year {
-  //border: 1px solid blue;
-  flex: 1 0 100%;
+  overflow: auto;
+  padding: 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  //flex: 1 0 100%;
   display: grid;
-  // border: 1px solid dodgerblue;
   grid-template-columns: repeat(52, 12px);
   //grid-template-rows: 1fr;
   grid-column-gap: 3px;

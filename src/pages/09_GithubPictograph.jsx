@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MainLayout from '../layouts/MainLayout.jsx';
+import ExperimentBody from '../ui/ExperimentBody';
 import Pictograph from '../project_components/09_github_pictograph/Pictograph';
-import { Typography } from '@material-ui/core';
+import { generateCommitData } from '../project_components/09_github_pictograph/generateData';
+
+import { ButtonGroup, Button } from '@material-ui/core';
 
 function GithubPictograph() {
-  return (
-    <MainLayout>
-      <Typography variant="h4" component="h2" gutterBottom>
-        Recreating the GitHub commit frequency pictograph
-      </Typography>
+  const filled = generateCommitData();
+  const empty = generateCommitData('empty');
 
-      <Pictograph />
-    </MainLayout>
+  const [initialState, updateInitialState] = useState(empty);
+
+  return (
+    <ExperimentBody title="Recreating the GitHub commit frequency pictograph">
+      <Pictograph data={initialState} />
+      <ButtonGroup style={{ marginTop: '1rem' }}>
+        <Button onClick={() => updateInitialState(filled)}>
+          Load or refresh data
+        </Button>
+        <Button onClick={() => updateInitialState(empty)}>Reset</Button>
+      </ButtonGroup>
+    </ExperimentBody>
   );
 }
 
