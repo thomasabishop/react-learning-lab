@@ -33,7 +33,7 @@ const useStyles = makeStyles(() => ({
   title: {
     fontSize: '1rem',
     fontWeight: 500,
-    letterSpacing: '0.6px',
+    letterSpacing: '0.5px',
   },
   logo: {
     width: '45px',
