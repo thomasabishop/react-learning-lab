@@ -1,32 +1,34 @@
-import React from "react";
-import { Paper, Typography, Button, Grid } from "@material-ui/core";
+import React from 'react';
+import { Paper, Typography, Button, Card } from '@material-ui/core';
 
 class ChangeTextClass extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: "The glass is half full",
+      text: 'The glass is half full',
     };
   }
   updateText() {
-    this.setState({ text: "The glass is half empty" });
+    this.setState({ text: 'The glass is half empty' });
   }
 
   revertText() {
-    this.setState({ text: "The glass is half full" });
+    this.setState({ text: 'The glass is half full' });
   }
 
   render() {
     return (
-      <Grid item xs={12}>
+      <Paper
+        variant="outlined"
+        style={{ padding: '1rem', marginBottom: '1rem' }}
+      >
         <Typography variant="h6" component="h2" gutterBottom>
           Using class component
         </Typography>
-        <Grid item xs={6}>
-          <Paper className="classTextOutput" variant="outlined">
-            <Typography>{this.state.text}</Typography>
-          </Paper>
-        </Grid>
+
+        <Paper className="classTextOutput" variant="outlined">
+          <Typography>{this.state.text}</Typography>
+        </Paper>
 
         <Button
           className="classButton"
@@ -45,7 +47,7 @@ class ChangeTextClass extends React.Component {
         >
           Revert text
         </Button>
-      </Grid>
+      </Paper>
     );
   }
 }

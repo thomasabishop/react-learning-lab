@@ -1,13 +1,13 @@
-import { React, useState } from "react";
-import { Paper, Typography, Button, Grid } from "@material-ui/core";
+import { React, useState } from 'react';
+import { Paper, Typography, Button, Grid } from '@material-ui/core';
 
 const ChangeTextHook = () => {
-  const start = "In my end is my beginning";
-  const change = "In my beginning is my end";
+  const start = 'In my end is my beginning';
+  const change = 'In my beginning is my end';
 
   const [text, textChange] = useState(start);
   return (
-    <Grid item xs={12}>
+    <Paper variant="outlined" style={{ padding: '1rem' }}>
       <Typography variant="h6" component="h2" gutterBottom>
         Using hook
       </Typography>
@@ -34,7 +34,7 @@ const ChangeTextHook = () => {
       >
         Revert text
       </Button>
-    </Grid>
+    </Paper>
   );
 };
 

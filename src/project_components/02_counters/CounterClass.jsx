@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Card,
   CardContent,
@@ -6,7 +6,7 @@ import {
   ButtonGroup,
   Button,
   Typography,
-} from "@material-ui/core";
+} from '@material-ui/core';
 
 class CounterClass extends React.Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class CounterClass extends React.Component {
 
   render() {
     return (
-      <Card variant="outlined">
+      <Card variant="outlined" style={{ marginBottom: '1rem' }}>
         <CardContent>
           <Typography color="textSecondary" gutterBottom>
             Using class component

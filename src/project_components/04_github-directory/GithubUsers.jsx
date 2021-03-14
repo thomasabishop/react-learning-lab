@@ -1,8 +1,8 @@
-import React from "react";
-import {} from "@material-ui/core";
-import UserForm from "./EnterUserForm";
-import UserCardList from "./UserCardList";
-import { Typography, Paper } from "@material-ui/core";
+import React from 'react';
+import {} from '@material-ui/core';
+import UserForm from './EnterUserForm';
+import UserCardList from './UserCardList';
+import { Typography, Paper } from '@material-ui/core';
 
 class GithubUsers extends React.Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class GithubUsers extends React.Component {
     return (
       <div>
         <Paper
-          style={{ padding: ".5rem", background: "#eeeeee" }}
+          style={{ padding: '.5rem', background: '#eeeeee' }}
           variant="outlined"
         >
           <Typography variant="body1">

@@ -3,7 +3,7 @@ import { Grid } from '@material-ui/core';
 import ContextPreHook from '../project_components/07_context_one/ContextPreHook';
 function PassingState() {
   return (
-    <ExperimentBody title="Context I: Intra-page">
+    <ExperimentBody title="Context API">
       <Grid item xs={12}>
         <ContextPreHook />
       </Grid>

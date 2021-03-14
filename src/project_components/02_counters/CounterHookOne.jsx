@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState } from 'react';
 import {
   Card,
   CardContent,
@@ -6,13 +6,13 @@ import {
   ButtonGroup,
   Button,
   Typography,
-} from "@material-ui/core";
+} from '@material-ui/core';
 
 const CounterHookOne = () => {
   const [counter, setCounter] = useState(0);
   const handleClick = () => setCounter(counter + 1);
   return (
-    <Card variant="outlined">
+    <Card variant="outlined" style={{ marginBottom: '1rem' }}>
       <CardContent>
         <Typography color="textSecondary" gutterBottom>
           Using hook
