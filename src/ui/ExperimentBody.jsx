@@ -1,22 +1,25 @@
-import MainLayout from "../layouts/MainLayout";
-import { Box, Paper, Typography, Divider, Grid } from "@material-ui/core";
+import MainLayout from '../layouts/MainLayout';
+import { Typography, Divider, makeStyles } from '@material-ui/core';
+
+const useStyles = makeStyles(() => ({
+  header: {
+    color: '#424242',
+    borderBottom: '2px solid lightgray',
+    marginBottom: '2rem',
+    paddingBottom: '.5rem',
+  },
+}));
 
 const ExperimentBody = (props) => {
+  const classes = useStyles();
   return (
     <MainLayout>
-      <Paper>
-        <Box p={3}>
-          <Grid container spacing={3}>
-            <Grid item xs={12}>
-              <Typography variant="h4" component="h2" gutterBottom>
-                {props.title}
-              </Typography>
-              <Divider />
-            </Grid>
-            {props.children}
-          </Grid>
-        </Box>
-      </Paper>
+      <div className={classes.header}>
+        <Typography variant="h4" component="h2" gutterBottom>
+          {props.title}
+        </Typography>
+      </div>
+      {props.children}
     </MainLayout>
   );
 };
