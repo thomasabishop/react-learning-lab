@@ -4,7 +4,7 @@ import { Typography, Divider, makeStyles } from '@material-ui/core';
 const useStyles = makeStyles(() => ({
   header: {
     color: '#424242',
-    borderBottom: '2px solid lightgray',
+    borderBottom: '2px solid #e8e8e8',
     marginBottom: '2rem',
     paddingBottom: '.5rem',
   },
