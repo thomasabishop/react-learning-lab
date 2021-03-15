@@ -1,5 +1,5 @@
 import MainLayout from '../layouts/MainLayout';
-import { Typography, Divider, makeStyles } from '@material-ui/core';
+import { Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
   header: {

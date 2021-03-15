@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper, Typography, Button, Card } from '@material-ui/core';
+import { Paper, Typography, Button } from '@material-ui/core';
 
 class ChangeTextClass extends React.Component {
   constructor(props) {

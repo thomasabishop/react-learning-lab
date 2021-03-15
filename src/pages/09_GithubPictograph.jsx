@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import MainLayout from '../layouts/MainLayout.jsx';
 import ExperimentBody from '../ui/ExperimentBody';
 import Pictograph from '../project_components/09_github_pictograph/Pictograph';
 import { generateCommitData } from '../project_components/09_github_pictograph/generateData';

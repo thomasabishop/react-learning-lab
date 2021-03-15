@@ -1,10 +1,6 @@
 import './Pictograph.scss';
-import { generateYear, generateCommitData } from './generateData.js';
-import { Button, ButtonGroup } from '@material-ui/core';
 
 function Pictograph(props) {
-  //const data = generateYear();
-  //const data = generateCommitData('empty');
   return (
     <div className="Pictograph">
       <div className="year">
